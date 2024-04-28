@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULSTOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" style="background-image: repeating-linear-gradient(rgba(231, 231, 224, 0.884) 50%, rgb(242, 247, 242) 200%); margin: 0px; color: black;">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'" id="btn">
+                    <input type="button" value="8" onclick="display.value += '8'" id="btn">
+                    <input type="button" value="9" onclick="display.value += '9'" id="btn">
+                    <input type="button" value="+" onclick="display.value += '+'" >
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'"id="btn">
+                    <input type="button" value="5" onclick="display.value += '5'"id="btn">
+                    <input type="button" value="6" onclick="display.value += '6'"id="btn">
+                    <input type="button" value="-" onclick="display.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'"id="btn">
+                    <input type="button" value="2" onclick="display.value += '2'"id="btn">
+                    <input type="button" value="3" onclick="display.value += '3'"id="btn">
+                    <input type="button" value="*" onclick="display.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="C" onclick="display.value = ''" id="operator">
+                    <input type="button" value="0" onclick="display.value += '0'"id="btn">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" >
+                    <input type="button" value="/" onclick="display.value += '/'"style="background-image: repeating-linear-gradient(#080808 50%, #434343 200%);color: white;">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
